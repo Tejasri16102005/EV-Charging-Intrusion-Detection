@@ -1,0 +1,397 @@
+/*
+  Custom CSS for EV Charging Station Hybrid Intrusion Detection System
+  High-Contrast Dark Cybersecurity Theme
+  Meets Strict Accessibility & Contrast Standards
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap');
+
+html, body, [class*="css"] {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    color: #F8FAFC !important;
+}
+
+/* 1. Global App Background */
+.stApp {
+    background: #0A0F1D !important;
+}
+
+/* Main Container spacing */
+.block-container {
+    padding-top: 1.8rem;
+    padding-bottom: 3rem;
+    max-width: 1280px;
+}
+
+/* 2. Sidebar Background & Border */
+[data-testid="stSidebar"], 
+section[data-testid="stSidebar"],
+[data-testid="stSidebar"] > div {
+    background-color: #111827 !important;
+    border-right: 1px solid #1F2937 !important;
+}
+
+/* 3. Sidebar Navigation Menu - Text Colors & Font Weights */
+[data-testid="stSidebar"] label[data-baseweb="radio"],
+[data-testid="stSidebar"] [data-testid="stRadio"] label {
+    color: #CBD5E1 !important; /* Inactive menu text */
+    font-size: 0.92rem !important;
+    font-weight: 500 !important;
+    padding: 6px 12px !important;
+    border-radius: 6px !important;
+    margin-bottom: 3px !important;
+    transition: all 0.15s ease-in-out !important;
+}
+
+[data-testid="stSidebar"] [data-testid="stRadio"] label p {
+    color: #CBD5E1 !important; /* Inactive menu text */
+    font-size: 0.92rem !important;
+    font-weight: 500 !important;
+}
+
+/* Hover state on menu items */
+[data-testid="stSidebar"] [data-testid="stRadio"] label:hover,
+[data-testid="stSidebar"] [data-testid="stRadio"] label:hover p {
+    color: #F1F5F9 !important; /* Sidebar menu text on hover */
+    background-color: #1F2937 !important;
+}
+
+/* Active / Selected Menu item */
+[data-testid="stSidebar"] [data-testid="stRadio"] label:has(input:checked),
+[data-testid="stSidebar"] [data-testid="stRadio"] label:has(input:checked) p,
+[data-testid="stSidebar"] [data-testid="stRadio"] [aria-checked="true"] + div,
+[data-testid="stSidebar"] [data-testid="stRadio"] div[role="radiogroup"] label[data-checked="true"] {
+    color: #FFFFFF !important; /* Active menu text */
+    font-weight: 600 !important;
+    background-color: #1E3A8A !important;
+    border-left: 3px solid #3B82F6 !important;
+}
+
+/* Sidebar header text */
+[data-testid="stSidebar"] h2,
+[data-testid="stSidebar"] h3 {
+    color: #FFFFFF !important;
+}
+
+/* 4. Main Content Headings & Text */
+h1, h2, h3, h4, h5, h6 {
+    color: #F8FAFC !important;
+    font-weight: 600 !important;
+    letter-spacing: -0.01em;
+}
+
+p, span, li {
+    color: #F8FAFC;
+    line-height: 1.6;
+}
+
+/* 5. Secondary Text, Descriptions & Subtexts */
+.secondary-text,
+.subtext,
+.stMarkdown p,
+.stCaption,
+[data-testid="stCaptionContainer"],
+[data-testid="stCaptionContainer"] p {
+    color: #CBD5E1 !important;
+}
+
+/* Top Research Header Banner - High Contrast */
+.research-header {
+    background: #0F172A !important;
+    border: 1px solid #2563EB !important;
+    border-radius: 8px;
+    padding: 24px 30px;
+    margin-bottom: 24px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.5);
+}
+
+.research-header h1 {
+    font-size: 1.85rem !important;
+    font-weight: 700 !important;
+    color: #FFFFFF !important;
+    margin: 0;
+}
+
+.research-header .subtitle {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #60A5FA !important;
+    margin-top: 6px;
+    letter-spacing: 0.03em;
+}
+
+.research-header .meta-badge {
+    display: inline-block;
+    background-color: #1E293B !important;
+    border: 1px solid #3B82F6 !important;
+    color: #93C5FD !important;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 5px 12px;
+    border-radius: 4px;
+    margin-top: 10px;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+/* 6. Metric Cards & Headings */
+.metric-card {
+    background: #111827 !important;
+    border: 1px solid #374151 !important;
+    border-radius: 8px;
+    padding: 18px 20px;
+    margin-bottom: 15px;
+}
+
+.metric-card .label {
+    font-size: 0.84rem;
+    color: #CBD5E1 !important; /* High contrast label */
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+.metric-card .value {
+    font-size: 1.95rem;
+    font-weight: 700;
+    color: #F8FAFC !important; /* Card heading value */
+    margin: 6px 0;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.metric-card .subtext {
+    font-size: 0.82rem;
+    color: #CBD5E1 !important; /* Readable secondary text */
+}
+
+/* Card Variations with Solid Vibrant Borders */
+.card-normal {
+    border-left: 5px solid #10B981 !important;
+}
+
+.card-malicious {
+    border-left: 5px solid #EF4444 !important;
+}
+
+.card-neutral {
+    border-left: 5px solid #3B82F6 !important;
+}
+
+.card-warning {
+    border-left: 5px solid #F59E0B !important;
+}
+
+/* Section Box Containers */
+.section-box {
+    background: #111827 !important;
+    border: 1px solid #374151 !important;
+    border-radius: 8px;
+    padding: 22px;
+    margin-bottom: 22px;
+}
+
+.section-box h3 {
+    color: #F8FAFC !important;
+    font-size: 1.18rem !important;
+    font-weight: 600 !important;
+    margin-top: 0;
+    margin-bottom: 14px;
+    border-bottom: 1px solid #374151 !important;
+    padding-bottom: 8px;
+}
+
+/* 7. Tables & DataFrames */
+/* Table Headers */
+thead tr th,
+[data-testid="stTable"] th,
+.stDataFrame th,
+[data-testid="stDataFrame"] th,
+div[data-testid="stDataFrame"] [role="columnheader"] {
+    background-color: #1E293B !important;
+    color: #E2E8F0 !important; /* Table headers: #E2E8F0 */
+    font-weight: 600 !important;
+    font-size: 0.88rem !important;
+    border-bottom: 2px solid #3B82F6 !important;
+}
+
+/* Table Body Text */
+tbody tr td,
+[data-testid="stTable"] td,
+.stDataFrame td,
+[data-testid="stDataFrame"] td,
+div[data-testid="stDataFrame"] [role="gridcell"] {
+    background-color: #0F172A !important;
+    color: #F1F5F9 !important; /* Table body text: #F1F5F9 */
+    font-size: 0.86rem !important;
+    border-bottom: 1px solid #1F2937 !important;
+}
+
+/* 8. Input Labels & Placeholders */
+label[data-testid="stWidgetLabel"],
+.stWidgetLabel p,
+label {
+    color: #F8FAFC !important; /* High contrast label */
+    font-weight: 600 !important;
+    font-size: 0.92rem !important;
+}
+
+/* Input Fields (text, number, select) */
+.stTextInput input,
+.stNumberInput input,
+[data-baseweb="input"] input {
+    background-color: #111827 !important;
+    color: #FFFFFF !important;
+    border: 1px solid #4B5563 !important;
+    border-radius: 6px !important;
+    font-size: 0.92rem !important;
+    font-weight: 500 !important;
+}
+
+.stTextInput input::placeholder,
+.stNumberInput input::placeholder {
+    color: #94A3B8 !important; /* Crisp placeholder */
+    opacity: 1 !important;
+}
+
+.stTextInput input:focus,
+.stNumberInput input:focus {
+    border-color: #3B82F6 !important;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.3) !important;
+}
+
+/* Selectbox Dropdown */
+[data-baseweb="select"] {
+    background-color: #111827 !important;
+    border: 1px solid #4B5563 !important;
+    border-radius: 6px !important;
+}
+
+[data-baseweb="select"] div {
+    color: #F8FAFC !important;
+    font-weight: 500 !important;
+}
+
+[data-baseweb="popover"],
+[data-baseweb="menu"],
+ul[role="listbox"] {
+    background-color: #111827 !important;
+    border: 1px solid #4B5563 !important;
+}
+
+ul[role="listbox"] li {
+    color: #F1F5F9 !important;
+    font-size: 0.9rem !important;
+}
+
+ul[role="listbox"] li:hover,
+ul[role="listbox"] li[aria-selected="true"] {
+    background-color: #1D4ED8 !important;
+    color: #FFFFFF !important;
+}
+
+/* File Uploader Container */
+[data-testid="stFileUploader"] {
+    background-color: #111827 !important;
+    border: 1.5px dashed #4B5563 !important;
+    border-radius: 8px !important;
+    padding: 16px !important;
+}
+
+[data-testid="stFileUploader"] section {
+    background-color: #0F172A !important;
+}
+
+[data-testid="stFileUploader"] span,
+[data-testid="stFileUploader"] small {
+    color: #CBD5E1 !important;
+    font-weight: 500 !important;
+}
+
+/* 9. Blockchain Blocks - High Contrast */
+.blockchain-block {
+    background: #0F172A !important;
+    border: 1px solid #1E3A8A !important;
+    border-radius: 8px;
+    padding: 18px;
+    margin-bottom: 14px;
+}
+
+.blockchain-block.verified {
+    border-left: 5px solid #10B981 !important;
+}
+
+.blockchain-block.tampered {
+    border-left: 5px solid #EF4444 !important;
+    background: #1E1218 !important;
+}
+
+.hash-mono {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 0.82rem;
+    color: #93C5FD !important;
+    word-break: break-all;
+    background: #111827 !important;
+    border: 1px solid #374151 !important;
+    padding: 6px 10px;
+    border-radius: 4px;
+    display: block;
+    margin-top: 4px;
+}
+
+/* Status Badges */
+.badge-benign {
+    background-color: #064E3B !important;
+    color: #6EE7B7 !important;
+    border: 1px solid #059669 !important;
+    padding: 3px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.badge-malicious {
+    background-color: #7F1D1D !important;
+    color: #FCA5A5 !important;
+    border: 1px solid #DC2626 !important;
+    padding: 3px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+/* Streamlit Alert/Info Boxes - Crisp Contrast */
+[data-testid="stAlert"] {
+    background-color: #111827 !important;
+    border: 1px solid #2563EB !important;
+    color: #F8FAFC !important;
+}
+
+[data-testid="stAlert"] p {
+    color: #F8FAFC !important;
+    font-size: 0.9rem !important;
+}
+
+/* Streamlit Button Styling */
+div.stButton > button:first-child {
+    background-color: #1D4ED8 !important;
+    color: #FFFFFF !important;
+    border: 1px solid #3B82F6 !important;
+    font-weight: 600 !important;
+    font-size: 0.95rem !important;
+    padding: 0.55rem 1.4rem !important;
+    border-radius: 6px !important;
+    transition: background-color 0.15s ease !important;
+}
+
+div.stButton > button:first-child:hover {
+    background-color: #2563EB !important;
+    border-color: #60A5FA !important;
+    color: #FFFFFF !important;
+}
+
+/* Code Blocks */
+code, pre {
+    background-color: #111827 !important;
+    color: #93C5FD !important;
+    border: 1px solid #374151 !important;
+    font-family: 'JetBrains Mono', monospace !important;
+}

@@ -1,0 +1,50 @@
+[
+  {
+    "index": 0,
+    "timestamp": "2026-11-05 13:23:41 UTC",
+    "dataset_filename": "GENESIS_ROOT_EVSE_SECURITY_ANCHOR",
+    "number_of_analysed_records": 0,
+    "normal_traffic_count": 0,
+    "malicious_traffic_count": 0,
+    "attack_wise_counts": {},
+    "previous_block_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+    "current_block_hash": "d594076b3a5f3c8f223d89494128ad5c300b3ac3eaf3825e836c84bd873996cc",
+    "nonce": 100
+  },
+  {
+    "index": 1,
+    "timestamp": "2026-11-05 13:57:22 UTC",
+    "dataset_filename": "EVSE_demo_upload_synthetic.csv",
+    "number_of_analysed_records": 30,
+    "normal_traffic_count": 0,
+    "malicious_traffic_count": 30,
+    "attack_wise_counts": {
+      "Synonymous IP": 12,
+      "Slowloris": 8,
+      "SYN Flood": 5,
+      "Aggressive Scan": 5
+    },
+    "previous_block_hash": "d594076b3a5f3c8f223d89494128ad5c300b3ac3eaf3825e836c84bd873996cc",
+    "current_block_hash": "149549585849e503e70f44b564d4239d94017a84f86c900f5662748ef26b018a",
+    "nonce": 0
+  },
+  {
+    "index": 2,
+    "timestamp": "2026-11-05 14:06:01 UTC",
+    "dataset_filename": "EVSE_demo_70pct_normal_30pct_attack.csv",
+    "number_of_analysed_records": 100,
+    "normal_traffic_count": 0,
+    "malicious_traffic_count": 100,
+    "attack_wise_counts": {
+      "Aggressive Scan": 37,
+      "Synonymous IP": 24,
+      "SYN Flood": 18,
+      "TCP Flood": 14,
+      "OS Fingerprinting": 4,
+      "Slowloris": 3
+    },
+    "previous_block_hash": "149549585849e503e70f44b564d4239d94017a84f86c900f5662748ef26b018a",
+    "current_block_hash": "e4e4eed4f2c041c0e43d1e2bc63786e43a08601681596c9ce1d95b3b95b36558",
+    "nonce": 0
+  }
+]
